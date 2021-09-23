@@ -8,7 +8,6 @@
     text-decoration: none;
     color:#fff;
     font-family: 'Yanone Kaffeesatz', sans-serif; 
-    /* font-family: 'Roboto', sans-serif; */
     transition: 0.5s;
 
 }
@@ -18,33 +17,27 @@ body{
 }
 ::-webkit-scrollbar{
     width: 6px;
-    /* background-color: #F5F5F5; */
+    
 }
 ::-webkit-scrollbar-track{
-    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
     background-color: #000000;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #cc0000; 
-    /* background-image: -webkit-linear-gradient(90deg,rgba(255, 255, 255, .2) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, .2) 50%,rgba(255, 255, 255, .2) 75%,transparent 75%,transparent) */
 }
-
-header{
-    height:10vh;
-}
-
-
 
 /*INICIO DEL  NAVBAR */
 .navbar{
     padding:15px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 .listas{
     display: flex;
     justify-content: center;
+    align-items:center;
     margin-top:1em;
     background-color: rgb(0, 0, 0);
+    padding: 15px;
 }
 .listas-letras-enlaces{
     color: #fff;
@@ -64,6 +57,7 @@ header{
 
 
 /* INTRODUCCION DE LA PAGINA */
+
 .contenido-presentacion{
     display: flex;
     justify-content: center;
@@ -78,10 +72,10 @@ header{
         letter-spacing:3px;
 }
 .resaltar{
-    color:#CC0000;
+    color:#cc0000;
 }
 .intro{
-    height:90vh;
+    height:100vh;
     width:100vw;
     position: relative;
     color:#fff;
@@ -90,7 +84,7 @@ header{
 .contenido{
     background-image: url(img/foto2.png);
     height:100vh;
-    width:100vw;
+    width:100%;
     display:flex;
     justify-content:center;
     /* border:1px solid white; */
@@ -109,7 +103,9 @@ header{
 .about{
     height:100vh;
     /* border:1px solid white; */
+    width:100vw;
 }
+
 .about_titulo{
     display:flex;
     justify-content: center;
@@ -120,18 +116,18 @@ header{
     letter-spacing:3px;
 }
 .about_container{
-    height:80vh;
+    height:100vh;
     /* border:1px solid white; */
 }
 .about_container img{
     width: 45vw;
-    height:80vh;
+    /* height:80vh; */
 }
 .contenedor-imagen{
     width:100vw;
     /* border:1px solid white; */
     display: flex;
-    justify-content:right;
+    /* justify-content:right; */
 }
 .about_descripcion{
     width:100%;
@@ -153,85 +149,12 @@ header{
     justify-content: center;
     border-radius:5px;
 }
-/* 
-//CARRUSEL
+DS
+/* PORFTOLIO */
 
-.slide-contenedor{
-    max-width: 100%;
-    max-height: 100vh;
-    width:100%;
-    height:auto;
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-}
-.miSlider{
-    display: none;
-    transition: 2s;
-    max-height: 100vh;
-}
-
-
-
-.miSlider img{
-    width:100%;
-    max-height: 100vh;
-    height:inherit;
-    object-fit: cover;
-    vertical-align:top;
-    transition: 2s;
-}
-.direcciones{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    font-size:20px;
-}
-
-.direcciones a{
-    color:#fff;
-    display:inline-block;
-    padding:20px;
-    text-decoration:none;
-}
-direcciones a:hover{
-    background:rgba(255,255,255,.5);
-    transition:.5s;
-}
-.barras{
-    position:absolute;
-    bottom:0;
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-.barra{
-    cursor:pointer;
-    height: 2px;
-    width:25;
-    margin:0 2px;
-    background: #fff;
-    display: inline-block;
-    margin-left:3px;
-}
-.active{
-    background-color: #cc0000;
-}
-.fade{
-    animation-name:fade;
-    animation-duration:1.5s;
-}
-@keyframes fade {
-    from{opacity:.4;}
-    to{opacity:1;}
-}  */
 
 .porfolio-contenedor{
+    margin-top: 5em;
     width:100vw;
     height:100vh;
     /* border:1px solid white; */
@@ -242,7 +165,7 @@ direcciones a:hover{
     font-size:3em;
     text-decoration: underline;
     text-decoration-color:#cc0000;
-    margin-top: 0.5em;
+    margin-top: 3em;
     margin-bottom: 1em;
     letter-spacing:3px;
 }
@@ -275,68 +198,16 @@ direcciones a:hover{
     width:20em;
     height:22em;
 }
-
-/* CONTACT ME */
-
-
-/* input[type=text], select, textarea {
-  width: 50%; /* Full width */
-  /* padding: 12px; Some padding  */
-  /* border: 1px solid #ccc; Gray border */
-  /* border-radius: 4px; Rounded borders */
-  /* box-sizing: border-box; Make sure that padding and width stays in place */
-  /* margin-top: 6px; Add a top margin */
-  /* margin-bottom: 16px; Bottom margin */
-  /* resize: vertical; Allow the user to vertically resize the textarea (not horizontally) */
-  /* background-color:black; */
-  /* display: flex; */
-  /* justify-content: center; */
-
-
-/* Style the submit button with a specific background color etc */
-/* input[type=submit] {
-    background-color: #cc0000;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-} */
-
-/* When moving the mouse over the submit button, add a darker green color */
-/* input[type=submit]:hover {
-    background-color: #aa0000;
-} */
-
-/* Add a background color and some padding around the form */
-/* .container-contactme {
-    width:100vw;
-    height:70vh;
-    margin-bottom: 10em;
-} */
-/* .country{
-    colo:black;
+.boton{
+    color:#fff;
 }
-.titulo-contactme{
-    text-align: center;
-    font-size:3em;
-    text-decoration: underline;
-    text-decoration-color:#cc0000;
-    margin-bottom: 1em;
-    letter-spacing:3px;
-} */
-/* form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.boton:hover{
+    background-color:#B70E21;
+    transition: 0.15s;
 }
-label{
-    padding:0;
-    margin: 0;
-    display: block;
-    align-items: left;
-} */
+
+            /* ==================  CONTACT ME  ================= */
+
 
 .container-a {
     max-width: 1170px;
@@ -356,14 +227,15 @@ ul {
     font-size: 3em;
     padding: 2em;
     text-decoration:underline;
-    text-decoration-color: #CC0000;
+    text-decoration-color: #cc0000;
 }
 
 
 
-.contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-}
+/* .contact-wrapper {
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.289);
+} */
 
 .contact-wrapper > * {
     padding: 1em;
@@ -408,7 +280,8 @@ ul {
     border: 0;
     text-transform: uppercase;
     padding: 1em;
-    font-size: 25px;
+    font-size: 30px;
+    border-radius: 5px;
 }
 
 .contact-form form button:hover,
@@ -448,6 +321,9 @@ footer{
     padding:25px;
     line-height:30px;
     font-size:25px;
+}
+.lista-palabras{
+    color:#fff;
 }
 
 .redes{
