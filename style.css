@@ -274,8 +274,16 @@ body {
     letter-spacing: 3px;
 }
 
+.imagenes-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .imagen-skills {
-    width: 50%;
+    width: 100%;
+    max-width: 300px;
     margin: auto;
     /* width: 20em; */
     /* height: 22em; */
