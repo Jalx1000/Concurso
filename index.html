@@ -11,6 +11,24 @@
   </head>
   <body>
     <!--============ HEADER Y NAVBAR  ============-->
+    <div id="sidebar" class="sidebar">
+      <div class="sidebar-container">
+        <div class="sidebar-container__li"><a href="#home">Home</a></div>
+          <div class="sidebar-container__li"><a href="#about">About</a></div>
+          <div class="sidebar-container__li"><a href="#portfolio">Porfolio</a></div>
+          <div class="sidebar-container__li"><a href="#skills">Skills</a></div>
+          <div class="sidebar-container__li"><a href="#contactme">Contact me</a></div>
+      </div>
+    </div>
+    <div id="main" class="header">
+      <div class="toggle-menu">
+        <div id="toggle-menu" class="toggle-menu__icon">
+          <div class="first-bar"></div>
+          <div class="second-bar"></div>
+          <div class="third-bar"></div>
+        </div>
+      </div>
+    </div>
     <header>
       <nav class="navbar">
         <ul class="listas">
@@ -18,16 +36,16 @@
             <a href="#home" class="listas-letras-enlaces">Home</a>
           </li>
           <li class="listas-letras">
-            <a href="#About" class="listas-letras-enlaces">About</a>
+            <a href="#about" class="listas-letras-enlaces">About</a>
           </li>
           <li class="listas-letras">
-            <a href="#Porfolio" class="listas-letras-enlaces">Porfolio</a>
+            <a href="#portfolio" class="listas-letras-enlaces">Porfolio</a>
           </li>
           <li class="listas-letras">
-            <a href="#Skills" class="listas-letras-enlaces">Skills</a>
+            <a href="#skills" class="listas-letras-enlaces">Skills</a>
           </li>
           <li class="listas-letras">
-            <a href="#Contacme" class="listas-letras-enlaces">Contact me</a>
+            <a href="#contactme" class="listas-letras-enlaces">Contact me</a>
           </li>
         </ul>
       </nav>
@@ -51,29 +69,25 @@
     <section id="about" class="about section">
       <h2 class="about_titulo">About Me</h2>
       <div class="about_container">
-        <div class="about_contenido">
-
           <div class="contenedor-imagen">
-            
-            <div class="about_boton"></div>
+            <div class="about-paragraph">
               <p class="about_descripcion">
                 I am a junior web designer with Html, Css, Javascrip, passionate
                 about learning, understanding,applying and optimizing websites for
                 their proper functioning, in my work I have always tried to convey the passion I feel for the profession and a high degree of involvement and perfectionism to always achieve the best result.<br/>
                 <a download="" href="/img/currículum.pdf" class="boton">Download CV</a>
               </p>
+            </div>
+            <div class="about-img">
               <img src="img/about1.png" alt="#" class="about_imagen" />
             </div>
-            </div>
           </div>
-          </div>
-        </div>
       </div>
     </section>
 
   <!-- PORFOLIO     -->
     <div id="portfolio" class="porfolio-contenedor">
-        <h2 class="titulo">Porfolio</h2>
+      <h2 class="titulo">Porfolio</h2>
       <div class="imagenes">
         <img src="img/Carrusel.png" alt="" class="imagen-porfolio">
         <img src="img/Carrusel.png" alt="" class="imagen-porfolio">
@@ -83,10 +97,10 @@
         <img src="img/Carrusel.png" alt="" class="imagen-porfolio">
       </div>
 
+    </div>
       <!-- SKILLS -->
 
-    </div>
-        <div id="skills" class="skills-contenedor">
+    <div id="skills" class="skills-contenedor">
         <h2 class="titulo">Skills</h2>
       <div class="imagenes">
         <img src="img/html.png" alt="" class="imagen-skills">
@@ -138,32 +152,34 @@
     <!-- ======================================     FOOTER      ======================================= -->
 
 
-   <footer class="footer">
-     <div class="container-footer">
-      <div class="container-titulo-footer">
-        <h4>JAL</h4>
-        <p>Frontend developer</p>
-      </div>
-      <div class="listas-footer">
-        <a class="lista">
-          <li> <a class="lista-palabras" href="#home">Home</li></a>
-          <li> <a class="lista-palabras" href="#about">About</li></a>
-          <li> <a class="lista-palabras" href="#portfolio"> Portfolio</li></a>
-          <li> <a class="lista-palabras" href="#skills">Skills</li></a> 
-          <li> <a class="lista-palabras" href="#contactme">Contac Me</li></a> 
-        </a>
-      </div>
-      <div class="redes">
-        <h3>Follow Me</h3>
-          <a  class="iconos-footer" target="_blank" href="https://www.facebook.com/javieralejandro.mogropenafiel/"><i class="fab fa-facebook-square"></i></a>
-
-          <a class="iconos-footer"  target="_blank" href="https://www.instagram.com/javier_penfiel/">
-          <i class="fab fa-instagram">
-          </i>
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="container-titulo-footer">
+          <h4>JAL</h4>
+          <p>Frontend developer</p>
+        </div>
+        <div class="listas-footer">
+          <a class="lista">
+            <li> <a class="lista-palabras" href="#home">Home</li></a>
+            <li> <a class="lista-palabras" href="#about">About</li></a>
+            <li> <a class="lista-palabras" href="#portfolio"> Portfolio</li></a>
+            <li> <a class="lista-palabras" href="#skills">Skills</li></a> 
+            <li> <a class="lista-palabras" href="#contactme">Contac Me</li></a> 
           </a>
-          <a class="iconos-footer"  target="_blank" href="https://github.com/Jalx1000"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="redes">
+          <h3>Follow Me</h3>
+            <a  class="iconos-footer" target="_blank" href="https://www.facebook.com/javieralejandro.mogropenafiel/"><i class="fab fa-facebook-square"></i></a>
+
+            <a class="iconos-footer"  target="_blank" href="https://www.instagram.com/javier_penfiel/">
+            <i class="fab fa-instagram">
+            </i>
+            </a>
+            <a class="iconos-footer"  target="_blank" href="https://github.com/Jalx1000"><i class="fab fa-github"></i></a>
+        </div>
       </div>
-     </div>
-   </footer>
-   <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    </footer>
+    <script src="toggle-menu.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+  </body>
 </html>
