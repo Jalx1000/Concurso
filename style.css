@@ -82,7 +82,6 @@ body {
 
 .listas-letras-enlaces a,a {
     color: #fff;
-    padding: 0em 1em;
     font-size: 22px;
     text-decoration: none;
 }
@@ -419,14 +418,19 @@ footer {
 .redes {
     padding: 25px;
     font-size: 25px;
+    display: block;
 }
 
 .iconos-footer {
     display: flex;
-    flex-direction: column;
-    padding: 10px 0;
+    display:inline-block;
+    padding: 10px 10px;
 }
 
+.iconos-footer__modifier{
+    padding-left: 0;
+    margin-left: 0;
+}
 @media screen and (max-width: 858px) {
     .navbar {
         display: none;
